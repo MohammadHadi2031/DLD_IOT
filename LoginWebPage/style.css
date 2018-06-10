@@ -1,0 +1,108 @@
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/*
+.back {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}*/
+
+/* ----------------------------------------------- */
+/* LOGIN */
+/* ----------------------------------------------- */
+
+.lbl_username{
+    font-family: "alphabetized cassette tapes";
+}
+
+body{
+    background: black;
+}
+
+.container {
+   
+    position: relative;
+    width: 100%;
+    padding-top: 65.25%; /* 16:9 Aspect Ratio */
+  
+ }
+ 
+ .back {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+  
+    align-items: center;
+    color: white;
+
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+ 
+    
+   
+ }
+
+ .lb{
+position: absolute;
+color: black;
+top: 27%;
+right: 12%;
+
+width: 25%;
+height: 15%;
+
+transform: rotate(14.5deg);
+font-family: "alphabetized cassette tapes";
+color: gray;
+font-size: 250%;
+ }
+
+ .lb input{
+
+    width: 100%;
+    font-size:7vmax;
+    height:7vmax;
+    font-family: "alphabetized cassette tapes";
+    background: transparent;
+   margin: 1vmin;
+ }
+
+ .lb button{
+
+    
+    font-size:7vmax;
+    height:8vmax;
+   
+    font-family: "alphabetized cassette tapes";
+
+ }
+ .lb label{
+    font-size:7vmax;
+    height:7vmax;
+    float: left;
+    margin: 1vmin;
+ }
+
+ .sp{
+    display: block;
+    height:2.5vh;
+    width: 100%;
+    background-color: black;
+ }
