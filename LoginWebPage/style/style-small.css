@@ -1,0 +1,96 @@
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* ----------------------------------------------- */
+/* LOGIN */
+/* ----------------------------------------------- */
+
+.lbl_username{
+    font-family: "alphabetized cassette tapes";
+}
+
+
+.container {
+   
+    position: relative;
+    width: 100%;
+    padding-top: 127%;
+  
+ }
+ 
+ .back {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+  
+    align-items: center;
+    color: white;
+
+    background-image: url("/files/back_sm.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+ 
+   
+ }
+
+ .lb{
+position: absolute;
+color: black;
+top: 27%;
+right: 24%;
+
+width: 45%;
+height: 30%;
+
+transform: rotate(14.5deg);
+font-family: "alphabetized cassette tapes";
+color: gray;
+font-size: 250%;
+ }
+
+ .lb input{
+
+    width: 100%;
+    font-size:10vw;
+    height:10vw;
+    font-family: "alphabetized cassette tapes";
+    background: transparent;
+    margin-bottom: 3vw;
+ }
+
+ .lb button{
+
+    
+    font-size:10vw;
+    height:11vw;
+   
+    font-family: "alphabetized cassette tapes";
+
+ }
+ .lb label{
+    font-size:10vw;
+    height:10vw;
+
+    margin-bottom: 3vw;
+    float: left;
+  
+ }
+
+ .sp{
+    display: block;
+    height:2.5vh;
+    width: 100%;
+    background-color: black;
+ }
