@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/style/style-large.css" media="(min-width:601px)"/>
-<link rel="stylesheet" href="/style/style-small.css" media="(max-width:600px)"/>
+<link rel="stylesheet" href="style/style-large.css" media="(min-width:601px)"/>
+<link rel="stylesheet" href="style/style-small.css" media="(max-width:600px)"/>
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800" rel="stylesheet">
 </head>
 <body>
@@ -13,21 +14,26 @@
 
 <div class="container"> 
   <div class="back">
-      <div  class="lb">
-            <label >Username:</label>
-            <br>
-          <!--  <div class="sp"></div> -->
-            <input type="text"  name="txt_username">
-            <br>
-            <label >Password:</label>
-            <br>
-            <input type="text"  name="txt_pass">
-            <br>
-            <button class="btn_login">Log In</button>
-      </div>
-  </div> 
+      <div   class="lb">
+            <label class="lbs" >Username:</label>
+                   
+            <input type="text"  class="txt_username_js">
+           
+            <label class="err">Please enter your username</label>
+            
+            <label class="lbs">Password:</label>
+          
+            <input type="password"  class="txt_pass_js">
+          
+            <label class="lbs">Channel ID:</label>
+           
+            <input type="text"  class="txt_channelID_js">
+            
+            <button class="btn_signup btn_signup_js">Sign up</button>
+        </form>
+    </div> 
 </div>
 
-  <script src="/javascript/login.js"> </script>
+  <script src="javascript/signup.js"> </script>
 </body>
 </html>

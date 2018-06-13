@@ -9,14 +9,14 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: "alphabetized cassette tapes"; /*a name to be used later*/
+    src: url("../files/alphabetized_cassette_tapes.ttf"); /*URL to font*/
+}
 /* ----------------------------------------------- */
 /* LOGIN */
 /* ----------------------------------------------- */
 
-.lbl_username{
-    font-family: "alphabetized cassette tapes";
-}
 
 
 .container {
@@ -38,7 +38,7 @@
     align-items: center;
     color: white;
 
-    background-image: url("/files/back.jpg");
+    background-image: url("../files/back.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
  
@@ -49,13 +49,13 @@
 position: absolute;
 color: black;
 top: 27%;
-right: 12%;
+right: 16%;
 
 width: 25%;
-height: 15%;
+height: 60%;
 
 transform: rotate(14.5deg);
-font-family: "alphabetized cassette tapes";
+font-family:"alphabetized cassette tapes",cursive;
 color: gray;
 font-size: 250%;
  }
@@ -63,28 +63,35 @@ font-size: 250%;
  .lb input{
 
     width: 100%;
-    font-size:7vw;
-    height:7vw;
-    font-family: "alphabetized cassette tapes";
+    font-size:4vw;
+    height:4vw;
+    font-family: "alphabetized cassette tapes",cursive;
     background: transparent;
-   margin-bottom: 1vmin;
+   margin-bottom: 1vw;
+ }
+
+ .lb .lbs{
+    font-size:4vw;
+    height:4vw;
+    float: left;
+    margin-bottom: 1vw;
  }
 
  .lb button{
-
-    
-    font-size:7vw;
-    height:8vw;
+    font-size:5vw;
+    height:6vw;
    
-    font-family: "alphabetized cassette tapes";
+    font-family: "alphabetized cassette tapes",cursive;
+ }
 
- }
- .lb label{
-    font-size:7vw;
-    height:7vw;
+.err{
+    color: red;
+    font-size:3vw;
+    height:3vw;
+    margin-bottom: 1vw;
     float: left;
-    margin-bottom: 1vmin;
- }
+    display: none;
+}
 
  .sp{
     display: block;
