@@ -51,23 +51,23 @@
  .lb{
 position: absolute;
 color: black;
-top: 27%;
-right: 24%;
+top: 26%;
+right: 30%;
 
-width: 45%;
-height: 30%;
+width: 48%;
+height: 72%;
 
 transform: rotate(14.5deg);
 font-family: "alphabetized cassette tapes",cursive;
 color: gray;
-font-size: 250%;
+
  }
 
  .lb input{
 
     width: 100%;
-    font-size:9vw;
-    height:10vw;
+    font-size:7vw;
+    height:8vw;
     font-family: "alphabetized cassette tapes",cursive;
     background: transparent;
     margin-bottom: 3vw;
@@ -76,24 +76,27 @@ font-size: 250%;
  .lb button{
 
     
-    font-size:9vw;
-    height:11vw;
+    font-size:7vw;
+    height:9vw;
    
     font-family: "alphabetized cassette tapes",cursive;
 
  }
- .lb label{
-    font-size:9vw;
-    height:10vw;
+ .lbs{
+    font-size:7vw;
+    height:8vw;
 
     margin-bottom: 3vw;
     float: left;
   
  }
 
- .sp{
-    display: block;
-    height:2.5vh;
-    width: 100%;
-    background-color: black;
- }
+ 
+.err{
+    color: red;
+    font-size:8vw;
+    height:8vw;
+    margin-bottom: 1vw;
+    float: right;
+    display: none;
+}

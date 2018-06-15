@@ -15,25 +15,30 @@
 <div class="container"> 
   <div class="back">
       <div   class="lb">
-            <label class="lbs" >Username:</label>
-                   
+            <label class="lbs" ><b>Username:</b></label>
+            <label class="err" id="emptyUsername"> *empty</label>
+            <label class="err" id="existedUsername"> *existed</label>
             <input type="text"  class="txt_username_js">
            
-            <label class="err">Please enter your username</label>
-            
-            <label class="lbs">Password:</label>
-          
+            <label class="lbs"><b>Password:</b></label>
+            <label class="err" id="emptyPass"> *empty</label>
             <input type="password"  class="txt_pass_js">
-          
-            <label class="lbs">Channel ID:</label>
            
+          
+            <label class="lbs lbl_channelID_js"><b>Channel ID:</b></label>
+            <label class="err" id="emptyChannelID"> *empty</label>
             <input type="text"  class="txt_channelID_js">
             
+          
             <button class="btn_signup btn_signup_js">Sign up</button>
+            <button class="btn_switch_js">login</button>
         </form>
     </div> 
 </div>
-
   <script src="javascript/signup.js"> </script>
 </body>
 </html>
+ 
+<!-- 
+  <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/496626/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+-->

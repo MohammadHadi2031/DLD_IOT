@@ -57,7 +57,7 @@ height: 60%;
 transform: rotate(14.5deg);
 font-family:"alphabetized cassette tapes",cursive;
 color: gray;
-font-size: 250%;
+
  }
 
  .lb input{
@@ -86,16 +86,10 @@ font-size: 250%;
 
 .err{
     color: red;
-    font-size:3vw;
-    height:3vw;
+    font-size:4vw;
+    height:4vw;
     margin-bottom: 1vw;
-    float: left;
+    float: right;
     display: none;
 }
 
- .sp{
-    display: block;
-    height:2.5vh;
-    width: 100%;
-    background-color: black;
- }
