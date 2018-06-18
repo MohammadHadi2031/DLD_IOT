@@ -11,7 +11,7 @@
 }
 @font-face {
     font-family: "alphabetized cassette tapes"; /*a name to be used later*/
-    src: url("../files/alphabetized_cassette_tapes.ttf"); /*URL to font*/
+    src: url("../images/alphabetized_cassette_tapes.ttf"); /*URL to font*/
 }
 /* ----------------------------------------------- */
 /* LOGIN */
@@ -38,7 +38,7 @@
     align-items: center;
     color: white;
 
-    background-image: url("../files/back.jpg");
+    background-image: url("../images/back.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
  
