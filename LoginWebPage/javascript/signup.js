@@ -8,7 +8,7 @@ const ExistedUserMsg = "this Username already exists. Please enter another usern
 var users =[];
 var userJSON =  localStorage.getItem('users');
 var LoginState = false;
-var loginedUser =null;
+var loggedin =null;
 // objects init
 var btn_signup = document.querySelector(".btn_signup_js");
 var btn_switch = document.querySelector(".btn_switch_js");
@@ -18,6 +18,7 @@ var txt_channelID = document.querySelector(".txt_channelID_js");
 var lbl_channelID = document.querySelector(".lbl_channelID_js");
 var epmtyUsername = document.getElementById('emptyUsername');
 var epmtyPass = document.getElementById('emptyPass');
+var incorrectPass = document.getElementById('incorrectPass');
 var emptyChannelID = document.getElementById('emptyChannelID');
 var existedUsername = document.getElementById('existedUsername');
 // events 
@@ -48,18 +49,19 @@ var btn_signup_click = function()
            if(seluser.pass != tmpPass)
            {
                // incorrect pass
+                incorrectPass.style.display = "block";
            }
            else
            {
                //login
-               loginedUser = seluser;
-               localStorage.setItem('loginedUser', JSON.stringify(loginedUser));
-               window.location.assign('dash.html');
+               incorrectPass.style.display = "none";
+               loginfcn(seluser);
            }
            
         }
         else
         {
+            incorrectPass.style.display = "none";
             var newuser = {
                 username: txt_username.value,
                 pass : txt_pass.value,
@@ -67,6 +69,7 @@ var btn_signup_click = function()
             };
             users.push(newuser);
             localStorage.setItem('users', JSON.stringify(users));
+            loginfcn(newuser);
         }
       
     }
@@ -78,8 +81,9 @@ var btn_switch_click = function(){
         //switching to SignIn state
         lbl_channelID.style.display = "block";
         txt_channelID.style.display = "block";
-        existedUsername.textContent = " *existed";
+        existedUsername.innerText = " *existed";
         btn_switch.textContent = "Log In";
+        btn_signup.textContent = "Sign up";
         LoginState=false;
     }
     else
@@ -87,14 +91,24 @@ var btn_switch_click = function(){
         //switching to Login state
         lbl_channelID.style.display = "none";
         txt_channelID.style.display = "none";
-        existedUsername.textContent = " *not found";
-        btn_switch.textContent = "Sign In";
+        existedUsername.innerText = " *not found";
+        btn_switch.textContent = "Sign up";
+        btn_signup.textContent = "Log In";
         LoginState= true;
     }
-   
+    existedUsername.style.display = "none";
+    epmtyUsername.style.display = "none";
+    epmtyPass.style.display = "none";
+    emptyChannelID.style.display = "none";
 
 }
 // methods
+var loginfcn = function(_user){
+    loggedin = _user;
+    localStorage.setItem('loggedin', JSON.stringify(loggedin));
+    window.location.assign('dash.html');
+}
+
 var checkUsername = function()
 {
     if(txt_username.value =="" )
@@ -122,6 +136,7 @@ var checkPass = function()
     {
         console.log(emptyPassMsg);
         epmtyPass.style.display = "block";
+        incorrectPass.style.display = "none";
         return 0;
     }
     epmtyPass.style.display = "none";
@@ -130,7 +145,7 @@ var checkPass = function()
 
 var checkChannelID = function() 
 {
-    if(LoginState || txt_channelID.value == "")
+    if(!LoginState && txt_channelID.value == "")
     {
         console.log(emptyChannelIDMsg); 
         emptyChannelID.style.display = "block";

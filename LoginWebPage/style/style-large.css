@@ -84,6 +84,13 @@ color: gray;
     font-family: "alphabetized cassette tapes",cursive;
  }
 
+ .btn_switch_js{
+    font-size:5vw;
+    height:6vw;
+    font-family: "alphabetized cassette tapes",cursive;
+    
+ }
+
 .err{
     color: red;
     font-size:4vw;

@@ -12,17 +12,18 @@
     </div>
     <div>
         <!-- user information-->
-        <label>Username</label>
+        <label>Username:</label>
         <label  id="lbl_username" > </label>
-        <label>channel ID</label>
+        <label>channel ID:</label>
         <label id="lbl_channelID"></label>
+        <button id="btn_logout">log out</button>
     </div>
     <div>
         <!-- chart-->
-        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/496626/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe id="chart_js" width="450" height="260" style="border: 1px solid #cccccc;" src=""></iframe>
 
     </div>
-   
+    <script src="javascript/dash.js"> </script>
 </body>
 
 
