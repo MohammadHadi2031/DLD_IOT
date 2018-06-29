@@ -70,27 +70,32 @@ color: gray;
     height:8vw;
     font-family: "alphabetized cassette tapes",cursive;
     background: transparent;
-    margin-bottom: 3vw;
+    margin-bottom: 1vw;
  }
 
- .lb button{
-
-    
-    font-size:7vw;
-    height:9vw;
-   
-    font-family: "alphabetized cassette tapes",cursive;
-
- }
  .lbs{
     font-size:7vw;
     height:8vw;
 
-    margin-bottom: 3vw;
+    margin-bottom: 1vw;
     float: left;
   
  }
 
+
+ 
+.btn_signup{
+    font-size:7vw;
+    height:9vw;
+   
+    font-family: "alphabetized cassette tapes",cursive;
+}
+ .btn_switch{
+    font-size:5vw;
+    height:7vw;
+    font-family: "alphabetized cassette tapes",cursive;
+    
+ }
  
 .err{
     color: red;

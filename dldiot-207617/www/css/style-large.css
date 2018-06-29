@@ -48,7 +48,7 @@
  .lb{
 position: absolute;
 color: black;
-top: 27%;
+top: 26%;
 right: 16%;
 
 width: 25%;
@@ -57,7 +57,12 @@ height: 60%;
 transform: rotate(14.5deg);
 font-family:"alphabetized cassette tapes",cursive;
 color: gray;
-
+/*border-image-source: url("../images/hash-border.png") ;
+    border-image-width: ;
+    border-image-outset: 10px;
+    border-image-repeat: round;
+    border-image-slice: initial;
+    */
  }
 
  .lb input{
@@ -67,26 +72,32 @@ color: gray;
     height:4vw;
     font-family: "alphabetized cassette tapes",cursive;
     background: transparent;
-   margin-bottom: 1vw;
+   margin-bottom: 0.7vw;
  }
 
  .lb .lbs{
     font-size:4vw;
     height:4vw;
     float: left;
-    margin-bottom: 1vw;
+    margin-bottom: 0.7vw;
+ }
+ 
+ .lbl_or{
+    font-size: 4vw;
+    height: 4vw; 
+
  }
 
- .lb button{
+.btn_signup{
     font-size:5vw;
     height:6vw;
    
     font-family: "alphabetized cassette tapes",cursive;
- }
-
- .btn_switch_js{
-    font-size:5vw;
-    height:6vw;
+    
+}
+ .btn_switch{
+    font-size:3vw;
+    height:4vw;
     font-family: "alphabetized cassette tapes",cursive;
     
  }
@@ -95,7 +106,7 @@ color: gray;
     color: red;
     font-size:4vw;
     height:4vw;
-    margin-bottom: 1vw;
+    margin-bottom: 0.7vw;
     float: right;
     display: none;
 }
