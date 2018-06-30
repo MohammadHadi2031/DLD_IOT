@@ -100,7 +100,6 @@ var btn_switch_click = function(){
     epmtyUsername.style.display = "none";
     epmtyPass.style.display = "none";
     emptyChannelID.style.display = "none";
-
 }
 // methods
 var loginfcn = function(_user){
